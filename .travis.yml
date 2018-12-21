@@ -14,4 +14,3 @@ deploy:
   skip_cleanup: true
   on:
     repo: nicolaAtti/pps-17-fb
-    tags: true
