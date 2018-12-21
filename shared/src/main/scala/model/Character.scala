@@ -142,12 +142,12 @@ import Character._
   * @param classMultipliers the default statistic multipliers for the warrior fighting class
   * @param role the character's fighting class
   */
-private case class Warrior(characterName: String,
-                           owner: Option[String],
-                           statistics: Statistics,
-                           specialMoves: Map[String, SpecialMove],
-                           classMultipliers: ClassMultipliers = ClassMultipliers(2, 1, 1, 0.5, 1.5, 3),
-                           role: String = WarriorRepresentation)
+case class Warrior(characterName: String,
+                   owner: Option[String],
+                   statistics: Statistics,
+                   specialMoves: Map[String, SpecialMove],
+                   classMultipliers: ClassMultipliers = ClassMultipliers(2, 1, 1, 0.5, 1.5, 3),
+                   role: String = WarriorRepresentation)
     extends Character {}
 
 /** Defines a character of class Thief
@@ -159,12 +159,12 @@ private case class Warrior(characterName: String,
   * @param classMultipliers the default statistic multipliers for the thief fighting class
   * @param role the character's fighting class
   */
-private case class Thief(characterName: String,
-                         owner: Option[String],
-                         statistics: Statistics,
-                         specialMoves: Map[String, SpecialMove],
-                         classMultipliers: ClassMultipliers = ClassMultipliers(1.5, 2, 1, 0.5, 1, 2.5),
-                         role: String = ThiefRepresentation)
+case class Thief(characterName: String,
+                 owner: Option[String],
+                 statistics: Statistics,
+                 specialMoves: Map[String, SpecialMove],
+                 classMultipliers: ClassMultipliers = ClassMultipliers(1.5, 2, 1, 0.5, 1, 2.5),
+                 role: String = ThiefRepresentation)
     extends Character {}
 
 /** Defines a character of class Wizard
@@ -176,12 +176,12 @@ private case class Thief(characterName: String,
   * @param classMultipliers the default statistic multipliers for the wizard fighting class
   * @param role the character's fighting class
   */
-private case class Wizard(characterName: String,
-                          owner: Option[String],
-                          statistics: Statistics,
-                          specialMoves: Map[String, SpecialMove],
-                          classMultipliers: ClassMultipliers = ClassMultipliers(1, 1, 1.5, 2, 0.5, 2),
-                          role: String = WizardRepresentation)
+case class Wizard(characterName: String,
+                  owner: Option[String],
+                  statistics: Statistics,
+                  specialMoves: Map[String, SpecialMove],
+                  classMultipliers: ClassMultipliers = ClassMultipliers(1, 1, 1.5, 2, 0.5, 2),
+                  role: String = WizardRepresentation)
     extends Character {}
 
 /** Defines a character of class Healer
@@ -193,12 +193,12 @@ private case class Wizard(characterName: String,
   * @param classMultipliers the default statistic multipliers for the healer fighting class
   * @param role the character's fighting class
   */
-private case class Healer(characterName: String,
-                          owner: Option[String],
-                          statistics: Statistics,
-                          specialMoves: Map[String, SpecialMove],
-                          classMultipliers: ClassMultipliers = ClassMultipliers(1.5, 0.5, 1, 2, 1, 2),
-                          role: String = HealerRepresentation)
+case class Healer(characterName: String,
+                  owner: Option[String],
+                  statistics: Statistics,
+                  specialMoves: Map[String, SpecialMove],
+                  classMultipliers: ClassMultipliers = ClassMultipliers(1.5, 0.5, 1, 2, 1, 2),
+                  role: String = HealerRepresentation)
     extends Character {}
 
 object Character {
